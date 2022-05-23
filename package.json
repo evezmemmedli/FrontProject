@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "name": "frontproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w assets/scss -o assets/css "
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

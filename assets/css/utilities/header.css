@@ -1,0 +1,183 @@
+.fixed-nav {
+  background-color: #e3a51e;
+  border: none; }
+
+.top-bar {
+  padding: 12px 0;
+  position: relative;
+  z-index: 5; }
+  .top-bar img {
+    width: 20px; }
+  .top-bar .fa-solid {
+    font-size: 12px; }
+  .top-bar .lang-box {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    color: #fff; }
+    .top-bar .lang-box .lang-box-1 {
+      font-size: 14px;
+      position: relative;
+      cursor: pointer; }
+      .top-bar .lang-box .lang-box-1 .header-dropdown {
+        position: absolute;
+        transition: 0.2s linear;
+        background-color: #fff;
+        color: black;
+        opacity: 0;
+        visibility: hidden;
+        width: 180px;
+        left: -60px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+        .top-bar .lang-box .lang-box-1 .header-dropdown li {
+          padding: 4px 0; }
+      .top-bar .lang-box .lang-box-1:hover .header-dropdown {
+        position: absolute;
+        left: -60px;
+        border: 1px solid #e3e3e3;
+        background-color: white;
+        color: #666666;
+        display: flex;
+        justify-content: start;
+        padding: 10px;
+        flex-direction: column;
+        width: 180px;
+        z-index: 2;
+        opacity: 1;
+        visibility: visible; }
+    .top-bar .lang-box .lang-box-2 {
+      font-size: 14px;
+      position: relative; }
+      .top-bar .lang-box .lang-box-2 .header-dropdown-2 {
+        transition: 0.2s linear;
+        position: absolute;
+        background-color: #fff;
+        color: black;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 180px;
+        left: -60px; }
+        .top-bar .lang-box .lang-box-2 .header-dropdown-2 li {
+          padding: 4px 0; }
+      .top-bar .lang-box .lang-box-2:hover .header-dropdown-2 {
+        position: absolute;
+        left: -60px;
+        border: 1px solid #e3e3e3;
+        background-color: white;
+        color: #666666;
+        display: flex;
+        justify-content: start;
+        padding: 10px;
+        flex-direction: column;
+        width: 180px;
+        z-index: 2;
+        opacity: 1;
+        visibility: visible; }
+    .top-bar .lang-box .border {
+      border-left: 1px solid #fff;
+      margin-top: 6px;
+      height: 13px; }
+
+.welcome {
+  color: #fff; }
+
+.bottom-bar {
+  background-color: white;
+  position: relative;
+  z-index: 3; }
+  .bottom-bar .container {
+    position: relative; }
+  .bottom-bar .row {
+    justify-content: space-between;
+    align-items: center; }
+
+.main-logo {
+  width: 90px;
+  height: 40px; }
+  .main-logo img {
+    width: 100%; }
+
+.site-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0; }
+  .site-nav ul li a {
+    color: #333333;
+    font-size: 16px;
+    padding: 48px 15px;
+    display: block; }
+    .site-nav ul li a i {
+      font-size: 13px; }
+
+.site-icons {
+  display: flex;
+  gap: 10px; }
+  .site-icons .icon {
+    padding: 0 6px; }
+    .site-icons .icon a {
+      color: #333333;
+      opacity: 0.8; }
+      .site-icons .icon a i {
+        font-size: 20px; }
+  .site-icons .icon-cart {
+    position: relative; }
+    .site-icons .icon-cart span {
+      background-color: #e3a51e;
+      position: absolute;
+      right: -5px;
+      top: -15px;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      color: white; }
+  .site-icons .hidden-icon-menu a {
+    color: black;
+    display: none; }
+
+.subMenu {
+  position: absolute;
+  display: flex;
+  top: 100%;
+  visibility: hidden;
+  background-color: white;
+  padding: 20px 20px;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.3s all; }
+  .subMenu .subMenu-header {
+    font-weight: 600;
+    margin-bottom: 10px; }
+  .subMenu .subMenu-ul {
+    display: block !important;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    min-width: 200px; }
+
+.site-nav > ul > li:hover .subMenu {
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1; }
+
+.subMenu.large-subMenu {
+  left: 0;
+  width: 100%; }
+
+@media (max-width: 1000px) {
+  .bottom-bar {
+    padding: 20px; }
+    .bottom-bar .container .col-8 {
+      display: none; }
+    .bottom-bar .container .col-2 .icon-1 {
+      display: none; }
+    .bottom-bar .container .col-2 .icon-2 {
+      display: none; }
+    .bottom-bar .container .col-2 .hidden-icon-menu a {
+      display: block; }
+  .top-bar {
+    display: none; } }
